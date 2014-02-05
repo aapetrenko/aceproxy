@@ -54,7 +54,7 @@ class AceConfig(object):
     # To use this, you should install VLC first
     # And run it with:
     # vlc -I telnet --clock-jitter 0 --network-caching 500 --telnet-pass admin
-    vlcuse = False
+    vlcuse = True
     # VLC host
     vlchost = '127.0.0.1'
     # VLC telnet interface port
@@ -80,19 +80,19 @@ class AceConfig(object):
     # !!!
     # PLEASE set this to 0 if you use VLC
     # !!!
-    videodelay = 2
+    videodelay = 0
     # Obey PAUSE and RESUME commands from Engine
     # (stops sending data to client, should prevent annoying buffering)
     # !!!
     # PLEASE set this to False if you use VLC
     # !!!
-    videoobey = True
+    videoobey = False
     # Stream send delay after PAUSE/RESUME commands (works only if option
     # above is enabled)
     # !!!
     # PLEASE set this to 0 if you use VLC
     # !!!
-    videopausedelay = 3
+    videopausedelay = 0
     # Delay before closing Ace Stream connection when client disconnects
     # In seconds.
     videodestroydelay = 3
